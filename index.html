@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <main class="dashboard">
+        <header class="dashboard-header">
+            <h1 id="greeting">Good Morning </h1>
+            <p>Here is your flow for today.</p>
+        </header>
+
+        <div class="dashboard-content">
+            <section class="main-column">
+                <article class="widget cognitive-flow-widget">
+                    <h2>Cognitive Flow</h2>
+                    <div class="flow-score-container">
+                        <div class="flow-score-circle" id="flow-score-circle">
+                            <div class="flow-score-value" id="flow-score-value">82</div>
+                        </div>
+                    </div>
+                    <p class="aura-insight">You're well-rested. Today is a great day for deep, creative work.</p>
+                </article>
+
+                <article class="widget agenda-widget">
+                    <h2>Today's Agenda</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <span class="time">11:00 AM</span>
+                            <span class="event focus">🚀 Focus Sanctuary (90 min)</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">2:00 PM</span>
+                            <span class="event meeting">⚠️ Project Sync Meeting</span>
+                        </div>
+                         <div class="timeline-item">
+                            <span class="time">3:00 PM</span>
+                            <span class="event meeting">⚠️ Design Review</span>
+                        </div>
+                        <div class="timeline-item">
+                            <span class="time">4:00 PM</span>
+                            <span class="event task">Submit final report</span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <aside class="sidebar-column">
+                <article class="widget quick-actions-widget">
+                    <h2>Quick Actions</h2>
+                    <button id="focus-btn" class="action-btn primary">🚀 Enter Focus Sanctuary</button>
+                    <button id="insights-btn" class="action-btn secondary">📊 Review My Weekly Insights</button>
+                </article>
+
+                <article class="widget mindful-break-widget">
+                    <h2>🧘 Mindful Break</h2>
+                    <p>You've been focused for 60 minutes. Time for a quick recharge.</p>
+                    <button id="break-btn" class="action-btn secondary">Start 2-Min Breathing Exercise</button>
+                </article>
+                
+                <article class="widget serendipity-widget">
+                    <h2>💡 Creative Spark</h2>
+                    <p>Anjali from Design just read an article on C++ optimization that you might find interesting.</p>
+                    <button id="chat-btn" class="action-btn secondary">Schedule a 15-min Chat</button>
+                </article>
+            </aside>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
